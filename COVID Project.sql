@@ -142,7 +142,7 @@ SELECT *, (RollingVaccinations/Population)*100 AS PopPercentVaccinated
 FROM #PercentPopVaccinated
 
 -- By Creating a View
--- To store data for laer visualizations
+-- To store data for later visualizations
 
 CREATE VIEW PercentPopVaccinated AS
 SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, SUM(CONVERT(bigint, vac.new_vaccinations)) OVER (Partition by dea.location ORDER BY dea.location, dea.date) AS RollingVaccinations
