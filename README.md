@@ -1,4 +1,4 @@
-# PortfolioProjects
+# Portfolio Projects
 
 This is a repository of different projects I've worked on to showcase different skillsets typical of a Data Scientist, or Analyst.
 It show cases different interests and will continue to grow and be worked upon as I discover new datasets, new techniques, and new insights.
